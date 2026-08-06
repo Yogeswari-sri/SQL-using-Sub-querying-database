@@ -4,8 +4,32 @@ A subquery is a query nested inside another SQL statement (SELECT, INSERT, UPDAT
 
 Types of subqueries with Company_DB examples
 
-Single row subquery- It return one scalar value used for comparison.
-Example: employees earning more than the overall average salary.
+# 📊 Company_DB SQL – Subquery Examples
+
+A **subquery** is a query nested inside another SQL statement (`SELECT`, `INSERT`, `UPDATE`, `DELETE`).  
+It returns a value or set of values used by the outer query to filter, compare, or compute results.
+
+---
+
+## 🔍 Why Subqueries Matter
+- Break down complex logic into smaller, readable steps.
+- Perform filtering and aggregation without multiple client‑side queries.
+- Enable row‑level comparisons and existence checks.
+- Improve modularity and maintainability of SQL code.
+
+---
+
+## 🧩 Types of Subqueries with Examples
+
+### 1️⃣ Single‑Row Subquery
+Returns one scalar value used for comparison.  
+**Example:** Employees earning more than the overall average salary.
+
+```sql
+SELECT EmpName, Salary
+FROM Employees
+WHERE Salary > (SELECT AVG(Salary) FROM Employees);
+
 
 SELECT EmpName, Salary
 FROM Employees
