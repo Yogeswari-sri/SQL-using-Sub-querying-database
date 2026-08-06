@@ -1,4 +1,4 @@
-# companydb-sql-using-Sub-querying-database
+# SQL -using-Sub-querying-database
 
 A subquery is a query nested inside another SQL statement (SELECT, INSERT, UPDATE, DELETE). It returns a value or set of values used by the outer query to filter, compare, or compute results.
 
